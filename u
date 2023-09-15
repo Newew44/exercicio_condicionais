@@ -1,0 +1,120 @@
+//Exercicios de interpretação
+
+//1.
+
+//a) analisa se na informação fornecida e escreve true ou false usando if e else.
+
+//b) a mensagem "alice pode dirigir" só será impressa se ela tiver a carteira de motorista, senão será impresso "alice não pode dirigir".
+
+
+
+//2.
+
+//a) o objetivo é escrever para o usuario se o animal é carnivoro ou herbivoro.
+
+//b) "Leão é um animal carnivoro"
+
+
+
+//3.
+
+//a) Diz se o número é maior que 5 ou não e se é par ou não.
+
+//b) "O número é maior que 5."
+//   "O número é par."
+
+
+
+
+//Exercicios de escrita
+
+
+
+//1)
+
+// let idade = prompt("Qual a sua idade?");
+
+// if (idade >= 18) {
+//     console.log("Você é maior de idade.");
+// } else {
+//     console.log("Você é menor de idade.")
+// }
+
+
+//2) 
+
+// let turno = prompt("Escreva em qual turno você estuda, usando M para matutino, T para tarde e N para noturno");
+
+// if (turno === "M") {
+//     console.log("Bom dia!")
+// } else if (turno === "T") {
+//     console.log("Boa tarde!")
+// } else if (turno === "N") {
+//     console.log("Boa noite!")
+// }
+
+
+//3)
+ 
+//let turno = prompt("Escreva em qual turno você estuda, usando M para matutino, T para tarde e N para noturno");
+// switch (turno) {
+//     case "M":
+//         console.log("Bom dia!")
+//         break;
+//     case "T":
+//         console.log("Boa tarde!")
+//         break
+//     case "N":
+//         console.log("Boa noite!")
+// }
+
+
+//4)
+
+// const aluno = {
+//     nome: "Kauê",
+//     idade: 18,
+//     tipoDeCurso: true,
+//     temBolsa: false,
+// }
+
+
+// if (aluno.idade < 30) {
+//     if (!aluno.temBolsa) {
+//         if (aluno.tipoDeCurso){
+//     console.log("Apto.")
+//         } else {
+//             console.log("Não apto.")
+//         }
+//     } else {
+//         console.log("Não apto.")
+//     }
+// } else {
+//     console.log("Não apto.")
+// }
+
+
+
+//5)
+
+const produto = {
+    nome: "rato semi podre",
+    preco: 46,
+    desconto: 3,
+    freteGratis: true,
+}
+
+if (produto.desconto > 0) {
+   if (produto.freteGratis) {
+    console.log("Preço final:", produto.preco - produto.desconto, "(Frete Grátis)")
+
+   } else {
+    console.log("Preço final:", produto.preco - produto.desconto)
+   }
+} else {
+    if (produto.freteGratis){
+    console.log("Preço final:", produto.preco, "(Frete Grátis")
+    } else {
+        console.log("Preço final:", produto.preco)
+    }
+}
